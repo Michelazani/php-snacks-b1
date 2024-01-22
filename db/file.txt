@@ -1,0 +1,11 @@
+1.Selezionare tutti gli studenti il cui cognome finisce per "o"
+SELECT `surname` FROM `students` WHERE `surname` LIKE '%O'; 
+
+2.Selezionare tutti gli appelli di esame con voto medio piu' alto di 28
+SELECT AVG(`vote`), `exam_id` FROM `exam_student` GROUP BY `exam_id` HAVING AVG(`vote`) > 28; 
+
+3.Selezionare tutti gli insegnanti che hanno la lettera s nel nome e il cui ufficio ha un numero maggiore di 96
+
+
+4.Contare i corsi (courses) che hanno lo stesso corso di laurea (degree)
+
